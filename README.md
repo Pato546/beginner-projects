@@ -8,4 +8,11 @@
 >This program gets you the username and domain name from an email address.
 >First it checks to see if the email address entered is valid or not.
 
+## Expand
+>This program takes in a number and returns the expanded form of the number
+>For eg
+| Number| Expanded Form|
+|-------|--------------|
+| 45    | 40 + 5       |
+| 1040  | 1000 + 40    |
 
