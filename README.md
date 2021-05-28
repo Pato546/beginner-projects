@@ -10,9 +10,10 @@
 
 ## Expand
 >This program takes in a number and returns the expanded form of the number
->For eg
+
+
 | Number| Expanded Form|
-|-------|--------------|
+| ----- | ------------ |
 | 45    | 40 + 5       |
 | 1040  | 1000 + 40    |
 
