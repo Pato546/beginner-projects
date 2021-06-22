@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from random import randint
 
 
@@ -5,7 +7,7 @@ def number_guessing():
     
     number_guessed = randint(1,10)
     number_of_guesses = 3
-    print(number_guessed)    
+
     for guess in range(1, number_of_guesses+1):
         number = int(input('[+] Enter number: '))
         
