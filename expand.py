@@ -1,4 +1,4 @@
-
+from word2number.w2n import word_to_num as w2n
 
 def is_string(func):
     def wrapper(num):
@@ -6,7 +6,10 @@ def is_string(func):
             if num.isdigit():
                 num = int(num)
             else:
-                return '{} is not a number'.format(num)
+                try:
+                    num = w2n(num)
+                except ValueError:
+                    return '{} is not a number'.format(num)
         return func(num)
         
     return wrapper
