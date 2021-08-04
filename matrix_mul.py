@@ -8,7 +8,7 @@ def check_dim(mat):
 
     for i in range(len(mat)):
         if len(mat[i]) != col:
-            return 'This is not a matrix'
+            return 'This is not a valid matrix'
     
     return (row, col)
 
@@ -24,7 +24,7 @@ def multiply_mat(mat_1, mat_2):
     dim_1 = check_dim(mat_1)
     dim_2 = check_dim(mat_2)
 
-    if dim_1[1] != dim_2[0]:
+    if dim_1[1] != dim_2[0]: # the col of the first matrix should be equal to the row of the second matrix
 
         return 'Cannot perform matrix multiplication'
 
@@ -42,4 +42,5 @@ def multiply_mat(mat_1, mat_2):
 
     return r
 
-print(multiply_mat([[2, 2, 2], [2, 2, 2]], [[10, 10, 8], [8, 10, 8], [8, 8, 10]]))
+print(multiply_mat([[3,8,4],[8,9,6],[3,2,4]],[[4,10],[6,2],[9,8]]))
+print(multiply_mat([[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]],[[148,58,60,40],[3,8,9,10],[14,15,20,30],[31,44,88,96]]))
